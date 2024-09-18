@@ -1,13 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title> HTML Forms</title>
 </head>
 <body>
-    <h1>hi shiva dheeraj here</h1>
-    <script src="./dh.js"></script>
+    <h1>HTML Forms</h1>  
+    <form>
+    <label for="username">Enter username:</label>
+    <input type="text" id="username" name="username" placeholder="username" required>
+    <br><br>
+    <label for="email">Enter email:</label>
+    <input type="email" id="email" name="email" placeholder="your email" required>
+    <br><br>
+    <label for="password">Enter password:</label>
+    <input type="password" id="password" name="password" placeholder="choose a password" required>
+    <p>select your age:</p>
+    <input type="radio" name="age" value="0-25" id="option-1">
+    <label for="option-1">0-25</label>
+    <input type="radio" name="age" value="25-50" id="option-1">
+    <label for="option-1">25-50</label>
+    <input type="radio" name="age" value="51+" id="option-1">
+    <label for="option-1">51+</label>
+    <br><br>
+    <label for="questions"></label>Security questions:></label>
+    <select name="question" id="questions">
+    <option value="q1">What are your favourite color?</option>
+    <option value="q2">what is your best ever security question</option>
+    <option value="q2">w\what would you like to take</option>
+    </select>
+    <br><br>
+    <label for="answer">Security question answers":</label>
+    <input type="text" id="answer" name="answer">
+    <br><br>
+    <label for="bio">Your bio.....</label><br>
+    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you....."></textarea>
+    <br><br>
+    <input type="submit" value="Submit the form">
+
+    </form>
 </body>
 </html>
